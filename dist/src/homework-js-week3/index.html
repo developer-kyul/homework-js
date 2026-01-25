@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>캐러셀(Carousel) 컴포넌트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/variable/pretendardvariable-dynamic-subset.min.css" as="style" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/variable/pretendardvariable-dynamic-subset.min.css" crossorigin />
+    <link rel="icon" href="/assets/icon_game-rCRKZLWH.svg" type="image/svg" />
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Br8MD5d2.css">
+  </head>
+
+  <body>
+    <section class="recommend">
+      <!-- 추천게임-->
+      <div class="recommend__header">
+        <a class="recommend__link" href="">
+          <img src="/assets/icon_game-rCRKZLWH.svg" alt="" />
+          <p class="recommend__title">추천 게임</p>
+          <p><img src="data:image/svg+xml,%3csvg%20width='7'%20height='12'%20viewBox='0%200%207%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.256286%200.251054C0.598002%20-0.0836847%201.1519%20-0.0836847%201.49361%200.251054L6.74371%205.39397C7.08543%205.72871%207.08543%206.27129%206.74371%206.60603L1.49361%2011.7489C1.1519%2012.0837%200.598002%2012.0837%200.256286%2011.7489C-0.0854288%2011.4142%20-0.0854288%2010.8716%200.256286%2010.5369L4.88772%206L0.256286%201.46312C-0.0854288%201.12838%20-0.0854288%200.585793%200.256286%200.251054Z'%20fill='%23858585'/%3e%3c/svg%3e" alt="" /></p>
+        </a>
+      </div>
+      <!-- //추천게임-->
+
+      <!-- 보이는 영역(마스크) -->
+      <div class="carousel__viewport">
+        <!-- 움직이는 레일 -->
+        <div class="carousel__track" role="list">
+          <!-- 1페이지(슬라이드) : 카드 2개 묶음 -->
+          <div class="carousel__slide" role="listitem">
+            <div class="recommend__grid">
+              <!-- 카드 1 -->
+              <article class="game">
+                <a class="game-card" href="#" aria-label="크로노 오디세이 자세히 보기">
+                  <div class="thumb-bg">
+                    <img src="/assets/bg-01-s0cDJL7n.webp" alt="" />
+                  </div>
+                  <img class="char" src="/assets/char-01-DhVmo1TD.png" alt="" />
+                  <div class="game__body">
+                    <h3 class="game__name">크로노 오디세이</h3>
+                    <p class="game__desc">멈춰 있던 시간이 흐른다</p>
+                    <p class="game__genre">MMORPG</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- 카드 2 -->
+              <article class="game">
+                <a class="game-card" href="#" aria-label="아키에이지 워 자세히 보기">
+                  <div class="thumb-bg">
+                    <img src="/assets/bg-02-CpiWY5dt.webp" alt="" />
+                  </div>
+                  <img class="char" src="/assets/char-02-DnDurZEp.png" alt="" />
+                  <div class="game__body">
+                    <h3 class="game__name">아키에이지 워</h3>
+                    <p class="game__desc">시대의 전설을 향해</p>
+                    <p class="game__genre">MMORPG</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <!-- 2페이지 -->
+          <div class="carousel__slide" role="listitem">
+            <div class="recommend__grid">
+              <article class="game">
+                <a class="game-card" href="#" aria-label="패스 오브 엑자일 2 자세히 보기">
+                  <div class="thumb-bg">
+                    <img src="/assets/bg-03-DHWne5YD.webp" alt="" />
+                  </div>
+                  <img class="char" src="/assets/char-03-mLxAuzhE.png" alt="" />
+                  <div class="game__body">
+                    <h3 class="game__name">패스 오브 엑자일 2</h3>
+                    <p class="game__desc">원대한 목표를 갖고</p>
+                    <p class="game__genre">MMORPG</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="game">
+                <a class="game-card" href="#" aria-label="오딘 발할라 라이징 자세히 보기">
+                  <div class="thumb-bg">
+                    <img src="/assets/bg-04-zoq0Iqzn.webp" alt="" />
+                  </div>
+                  <img class="char" src="/assets/char-04-BwabV0tB.png" alt="" />
+                  <div class="game__body">
+                    <h3 class="game__name">오딘: 발할라 라이징</h3>
+                    <p class="game__desc">신화의 전장으로</p>
+                    <p class="game__genre">MMORPG</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <!--//2페이지 -->
+
+          <!-- 3페이지 -->
+          <div class="carousel__slide" role="listitem">
+            <div class="recommend__grid">
+              <article class="game">
+                <a class="game-card" href="#" aria-label="롬 리멤버 오브 마제스티 자세히 보기">
+                  <div class="thumb-bg">
+                    <img src="/assets/bg-05-Cf2Ciz7-.webp" alt="" />
+                  </div>
+                  <img class="char" src="/assets/char-05-CWn6w_sV.png" alt="" />
+                  <div class="game__body">
+                    <h3 class="game__name">롬: 리멤버 오브 마제스티</h3>
+                    <p class="game__desc">전설을 다시 쓰다</p>
+                    <p class="game__genre">MMORPG</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="game">
+                <a class="game-card" href="#" aria-label="배틀그라운드 자세히 보기">
+                  <div class="thumb-bg">
+                    <img src="/assets/bg-06-xWzsQajE.webp" alt="" />
+                  </div>
+                  <img class="char" src="/assets/char-06-mUxEe33m.png" alt="" />
+                  <div class="game__body">
+                    <h3 class="game__name">배틀그라운드</h3>
+                    <p class="game__desc">마지막까지 생존하라</p>
+                    <p class="game__genre">MMORPG</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <!-- //3페이지 -->
+        </div>
+      </div>
+      <!-- //보이는 영역(마스크) -->
+
+      <!-- 페이지네이션 -->
+      <div class="pager" aria-label="추천 게임 페이지 이동">
+        <button class="pager__btn" type="button" data-dir="prev" aria-label="이전">
+          <img src="data:image/svg+xml,%3csvg%20width='8'%20height='14'%20viewBox='0%200%208%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.70695%200.292893C7.31643%20-0.0976311%206.68342%20-0.0976311%206.29289%200.292893L0.292892%206.29289C-0.0976324%206.68342%20-0.0976324%207.31643%200.292892%207.70696L6.29289%2013.707C6.68342%2014.0975%207.31643%2014.0975%207.70695%2013.707C8.09748%2013.3164%208.09748%2012.6834%207.70695%2012.2929L2.41399%206.99992L7.70695%201.70696C8.09748%201.31643%208.09748%200.683418%207.70695%200.292893Z'%20fill='%23474747'/%3e%3c/svg%3e" alt="" />
+        </button>
+
+        <span class="pager__count">1/1</span>
+
+        <button class="pager__btn" type="button" data-dir="next" aria-label="다음">
+          <img src="data:image/svg+xml,%3csvg%20width='8'%20height='14'%20viewBox='0%200%208%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.292893%200.292893C0.683418%20-0.0976311%201.31643%20-0.0976311%201.70696%200.292893L7.70696%206.29289C8.09748%206.68342%208.09748%207.31643%207.70696%207.70696L1.70696%2013.707C1.31643%2014.0975%200.683418%2014.0975%200.292893%2013.707C-0.0976311%2013.3164%20-0.0976311%2012.6834%200.292893%2012.2929L5.58586%206.99992L0.292893%201.70696C-0.0976311%201.31643%20-0.0976311%200.683418%200.292893%200.292893Z'%20fill='%23474747'/%3e%3c/svg%3e" alt="" />
+        </button>
+      </div>
+      <!-- //페이지네이션 -->
+    </section>
+  </body>
+</html>
