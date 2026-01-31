@@ -1,0 +1,34 @@
+:root {
+
+  --card-radius: 20px;
+  --card-border-color: var(--blue-gray-50);
+  --card-bg-color: var(--white);
+  --card-shadow-color: hsla(var(--black-values) / 0.02);
+  --card-hover-color: var(--blue-gray-200);
+  --card-hover-shadow-color: hsla(var(--black-values) / 0.08);
+  --card-translate-y: -8px;
+
+  --card-selected-border-color: var(--blue-500);
+  --card-selected-bg-color: var(--blue-50);
+  --card-selected-shadow-color: hsla(var(--blue-100-values) / 0.9);
+
+  --plan-name-color: hsla(var(--blue-gray-500-values) / 0.75);
+  --card-selected-plan-name-color: var(--blue-500);
+
+  --plan-price-color: var(--blue-gray-950);
+
+  --plan-features-border-color: var(--blue-gray-50);
+  --plan-features-color: var(--blue-gray-950);
+  --plan-features-pseudo-color: var(--blue-400);
+
+  --plan-selection-button-outline-color: hsla(var(--blue-200-values) / 0.45);
+
+  --check-badge-bg-color: var(--blue-400);
+  --check-badge-color: var(--white);
+
+  --selection-info-color: var(--gray-900);
+  --selection-info-bg-color: var(--white);
+  --selection-info-shadow-color: hsla(var(--black-values) / 0.08);
+
+  --highlight-color: var(--blue-400);
+}

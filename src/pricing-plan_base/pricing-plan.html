@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>"가격 플랜 선택" 컴포넌드 만들기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/price-tag.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/fonts/noto-sans-kr.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script src="./assets/scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="sr-only">이용하실 요금제를 선택해주세요</h1>
+      <section class="pricing-section" aria-labelledby="pricing-title">
+        <h2 id="pricing-title" class="sr-only">요금제 선택 서비스</h2>
+        <div class="pricing-container">
+          <article class="plan-card" data-plan="Basic" data-price="무료">
+            <span class="check-badge" aria-hidden="true">✔</span>
+            <h3 class="plan-name" lang="en">Basic</h3>
+            <p class="plan-price" aria-label="가격: 무료">Free</p>
+            <ul class="plan-features">
+              <li>기본 대시보드 제공</li>
+              <li>월 10회 리포트</li>
+              <li>커뮤니티 지원</li>
+            </ul>
+            <button type="button" class="plan-selection-button" aria-label="베이직 플랜 선택하기" aria-pressed="false"></button>
+          </article>
+          <article class="plan-card" data-plan="Standard" data-price="15,000원">
+            <span class="check-badge" aria-hidden="true">✔</span>
+            <h3 class="plan-name" lang="en">Standard</h3>
+            <p class="plan-price" aria-label="가격: 15,000원">₩15,000</p>
+            <ul class="plan-features">
+              <li>모든 기능 무제한</li>
+              <li>광고 제거</li>
+              <li>이메일 고객 지원</li>
+              <li>데이터 내보내기</li>
+            </ul>
+            <button type="button" class="plan-selection-button" aria-label="스탠다드 플랜 선택하기" aria-pressed="false"></button>
+          </article>
+          <article class="plan-card" data-plan="Premium" data-price="30,000원">
+            <span class="check-badge" aria-hidden="true">✔</span>
+            <h3 class="plan-name" lang="en">Premium</h3>
+            <p class="plan-price" aria-label="가격: 30,000원">₩30,000</p>
+            <ul class="plan-features">
+              <li>Standard 혜택 전체</li>
+              <li>전담 매니저 배정</li>
+              <li>API 액세스 권한</li>
+              <li>초기 설정 컨설팅</li>
+            </ul>
+            <button type="button" class="plan-selection-button" aria-label="프리미엄 플랜 선택하기" aria-pressed="false"></button>
+          </article>
+        </div>
+        <div class="selection-info" aria-live="polite">
+          <strong class="highlight" data-id="plan-name"></strong>
+          플랜(<span data-id="plan-price"></span>)을 선택하셨습니다.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

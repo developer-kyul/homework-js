@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: hsla(var(--blue-gray-100-values) / 0.75);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+  margin-block-end: 40px;
+  color: var(--blue-gray-950);
+  text-align: center;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
